@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body class="theme0">
+  <div id="bg"></div>
+  
+  <div id="main">
+	<div id="top">
+		<div id="logo">
+			Todo
+		</div>
+		<div id="switch">
+			<button id="sw-icon" onclick="themechange()">
+				<img id="theme-icon" src="images/icon-sun.svg"/>
+			</button>
+		</div>
+		<div class="cl"></div>
+	</div>
+	
+	<div id="new">
+		<div class="new active">
+			<div class="check">
+				<button class="checkbox not" onclick="newtodo()">
+					<img src="images/icon-check.svg"/>
+				</button>
+			</div>
+			<div class="add">
+				<input type="text" id="what" onkeypress="if(event.keyCode == 13){newtodo();}" placeholder="Create a new todo..."/>
+			</div>
+			<div class="cl"></div>
+		</div>
+		
+	</div>
+	
+	<div id="todos">
+	
+		<div id="todoss">
+		
+		</div>
+		
+		<div id="stat">
+			<div id="howmany">
+				<span id="left">0</span> items left
+			</div>
+			
+			<div id="filter">
+				<span id="filter1" class="chosen" onclick="filter(0)">All</span>
+				<span id="filter2" onclick="filter(1)">Active</span> 
+				<span id="filter3" onclick="filter(2)">Completed</span>
+			</div>
+			
+			<div id="clear" onclick="clearcompleted()">
+				Clear Completed
+			</div>
+			
+			<div class="cl"></div>
+		</div>
+	</div>
+	
+	<div id="info">
+		Drag and drop to reorder list (soon)
+	</div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Furkan Doğan</a>.
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@
 		</div>
 		<div id="switch">
 			<button id="sw-icon" onclick="themechange()">
-				<img id="theme-icon" src="images/icon-sun.svg"/>
+				<img id="theme-icon" alt="sun-icon" src="images/icon-sun.svg"/>
 			</button>
 		</div>
 		<div class="cl"></div>
@@ -28,9 +28,7 @@
 	<div id="new">
 		<div class="new active">
 			<div class="check">
-				<button class="checkbox not" onclick="newtodo()">
-					<img src="images/icon-check.svg"/>
-				</button>
+				<button class="checkbox not" onclick="newtodo()"></button>
 			</div>
 			<div class="add">
 				<input type="text" id="what" onkeypress="if(event.keyCode == 13){newtodo();}" placeholder="Create a new todo..."/>

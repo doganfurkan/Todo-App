@@ -35,6 +35,7 @@ function newtodo(){
 	}
 	check();
 	many();
+	what.value = "";
 }
 
 function check(){

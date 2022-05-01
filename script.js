@@ -7,7 +7,7 @@ var validfilter = 0;
 
 function themechange(){
 	theme++;
-	document.body.classList.remove(document.body.classList.item(0));
+	document.body.classList.remove(document.body.classList.item(document.body.classList.length-1));
 	document.body.classList.add("theme" + theme%2);
 	check();
 	

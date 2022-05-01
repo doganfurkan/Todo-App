@@ -129,10 +129,10 @@ body{
 .active .checkbox:before{
 	position:absolute;
 	content:'';
-	top:1px;
-	left:1px;
-	bottom:1px;
-	right:1px;
+	top:2px;
+	left:2px;
+	bottom:2px;
+	right:2px;
 	border-radius:50%;
 	}
 	
